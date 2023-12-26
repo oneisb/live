@@ -687,6 +687,7 @@ button.hint {
 }
 
 .credits {
+	display:none;
 	color: #101020;
 	position: fixed;
 	bottom: 0;
