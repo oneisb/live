@@ -2900,8 +2900,8 @@ async function main() {
 	} */
 
 	if (urlParams.has("streamid") || urlParams.has("view") || urlParams.has("v") || urlParams.has("pull")) {
-
-		console.log("streamid/view/pull set");
+		
+		session.webcamonly = false; // if set to true, we will not show the stream selection screen.
 		// the streams we want to view; if set, but let blank, we will request no streams to watch.
 		session.view = urlParams.get("streamid") || urlParams.get("view") || urlParams.get("v") || urlParams.get("pull") || null; // this value can be comma seperated for multiple streams to pull
 
